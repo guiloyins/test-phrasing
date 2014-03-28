@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-PPhrasing::Application.config.secret_key_base = '0b98dd5bafbb0c6f7ca87f4aaf5a783289df8bd1759738c51da676ce560cbfdf6d188d3986230c0d4a2e7c35df02608e81ea1c75150dcecdbf1e9ca87ec9ade2'
+PPhrasing::Application.config.secret_key_base = ENV['SECRET_TOKEN']
