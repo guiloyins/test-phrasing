@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140328172413) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "phrasing_phrase_versions", force: true do |t|
     t.integer  "phrasing_phrase_id"
     t.text     "value"
