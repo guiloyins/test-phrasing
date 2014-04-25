@@ -1,6 +1,6 @@
 module PhrasingHelper
 
   def can_edit_phrases?
-    request.subdomains.first ==  'edit'
+    request.path ==  '/edit'
   end
 end
