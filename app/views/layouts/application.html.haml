@@ -5,7 +5,7 @@
     %meta{:name => "keywords", :content => ""}
     %meta{:name => "description", :content => ""}
 
-    %title= yield(:title) + "Titulo aqui"
+    %title= yield(:title) + "Phrasing test"
 
     %link{:href => "/favicon.ico", :rel => "shortcut icon"}
     = yield(:header_tags)
@@ -37,26 +37,12 @@
   %body{:id => controller.controller_name}
     #wrap
       %header
-        #masthead
-          /- if current_user
-          /  %p
-          /    = "Bem-vindo <strong>#{current_user.name}</strong> &bull; ".html_safe
-          /    = link_to "Sair", logout_path
-          /- else
-          /  %p
-          /    = link_to "Acesse com Facebook", "/auth/facebook", :id => "facebook-connect"
-
-        #logo<
-          = link_to "Logo", "/"
         = render 'flash_messages'
       %hr
       #container
         %section{:role => "main"}
           = yield
 
-        - if content_for?(:sidebar)
-          %aside
-            = yield(:sidebar)
       %hr
       %footer
         %p
