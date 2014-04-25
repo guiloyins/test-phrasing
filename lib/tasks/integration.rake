@@ -43,7 +43,7 @@ def deploy(app)
 end
 
 namespace :integration do
-  APP = 'p_phrasing'
+  APP = 'phrasing-test'
   USER = run_with_clean_env("git config --get user.name", true).strip
 
   namespace :heroku do
