@@ -16,8 +16,8 @@ end
 
 def backup(app)
   return unless has_database?(app)
-  puts "--> Backing up database via Heroku".magenta
-  run_with_clean_env("heroku pgbackups:capture --expire --app #{app}")
+  # puts "--> Backing up database via Heroku".magenta
+  # run_with_clean_env("heroku pgbackups:capture --expire --app #{app}")
 end
 
 def migrate(app)
