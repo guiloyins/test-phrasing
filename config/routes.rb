@@ -4,7 +4,7 @@ PPhrasing::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'page#index'
-  get '/edit' => 'page#index'
+  get '/edit_phrase' => 'page#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
